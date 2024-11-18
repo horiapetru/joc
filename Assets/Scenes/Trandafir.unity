@@ -465,8 +465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bf5f8d275aa8940b89e1af0978bb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: ed2984e24d5df6f46a80ead6ad2964fa, type: 3}
-  pressedImage: {fileID: 21300000, guid: 8f47ff751b3bdec48862adf0100c74fa, type: 3}
+  defaultImage: {fileID: 21300000, guid: 068666a7dad5030459e76fa1e8a18b7b, type: 3}
+  pressedImage: {fileID: 21300000, guid: 42af9f0a3b07ef447a02af2c6ffd3f16, type: 3}
   KeyToPress1: 108
   KeyToPress2: 275
 --- !u!212 &95022261
@@ -513,7 +513,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ed2984e24d5df6f46a80ead6ad2964fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 068666a7dad5030459e76fa1e8a18b7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1886,8 +1886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bf5f8d275aa8940b89e1af0978bb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: 1bbda9210988dfd4db252a09838d254f, type: 3}
-  pressedImage: {fileID: 21300000, guid: cacc39dd2a4e88a43aadeddd73e9b1e2, type: 3}
+  defaultImage: {fileID: 21300000, guid: bf48adc0ad49b72449824794dda5ea82, type: 3}
+  pressedImage: {fileID: 21300000, guid: a28e339b04de0a642a5b3694ac44714c, type: 3}
   KeyToPress1: 107
   KeyToPress2: 274
 --- !u!212 &513799024
@@ -1934,7 +1934,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1bbda9210988dfd4db252a09838d254f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf48adc0ad49b72449824794dda5ea82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6300,8 +6300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bf5f8d275aa8940b89e1af0978bb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: c3c13b1f8baa5dd4a86d3dc186668178, type: 3}
-  pressedImage: {fileID: 21300000, guid: 2d10ec486261df445b73774ff82f1b69, type: 3}
+  defaultImage: {fileID: 21300000, guid: 169b582120000a74d9c2a775e8f634e9, type: 3}
+  pressedImage: {fileID: 21300000, guid: a5128b3d09b6e314da5da8727b2dcca8, type: 3}
   KeyToPress1: 115
   KeyToPress2: 273
 --- !u!212 &2056464299
@@ -6348,7 +6348,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c3c13b1f8baa5dd4a86d3dc186668178, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 169b582120000a74d9c2a775e8f634e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6615,8 +6615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bf5f8d275aa8940b89e1af0978bb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 21300000, guid: ad187f74f2d0cc4499f39a0267b9eda8, type: 3}
-  pressedImage: {fileID: 21300000, guid: 18bf226de2d59284e904c26430f659c9, type: 3}
+  defaultImage: {fileID: 21300000, guid: 76ead3ee3c56fe641bedd25822ef3400, type: 3}
+  pressedImage: {fileID: 21300000, guid: b1d65f5f83b3c6d47993c355a5aeb7de, type: 3}
   KeyToPress1: 97
   KeyToPress2: 276
 --- !u!212 &2124739387
@@ -6663,7 +6663,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ad187f74f2d0cc4499f39a0267b9eda8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76ead3ee3c56fe641bedd25822ef3400, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
