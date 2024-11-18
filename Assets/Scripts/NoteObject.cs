@@ -54,6 +54,10 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = true;
         } 
+        if(other.gameObject.CompareTag("Barrier"))
+        {
+            gameObject.SetActive(false);
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -64,5 +68,6 @@ public class NoteObject : MonoBehaviour
             GameManager.instance.noteMissed();
             Instantiate(missEffect, missEffect.transform.position, missEffect.transform.rotation);
         } 
+        
     }
 }
