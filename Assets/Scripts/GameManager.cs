@@ -40,10 +40,16 @@ public class GameManager : MonoBehaviour
 
     public int highScore;
 
+
     public Animator animator;
-    public TextMeshPro HighScoreUsername;
-    public TextMeshPro HighScoreTeamName;
     public GameObject Camera;
+
+
+    private UnityEngine.SceneManagement.Scene scene;
+    private UnityEngine.SceneManagement.Scene map1;
+    private UnityEngine.SceneManagement.Scene map2;
+    private UnityEngine.SceneManagement.Scene map3;
+    private UnityEngine.SceneManagement.Scene map4;
 
     public GameObject resultsScreen;
     public GameObject HighScoreText;
@@ -58,9 +64,37 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
 
+        scene = SceneManager.GetActiveScene();
+        map1 = SceneManager.GetSceneByBuildIndex(2);
+        map2 = SceneManager.GetSceneByBuildIndex(3);
+        map3 = SceneManager.GetSceneByBuildIndex(4);
+        map4 = SceneManager.GetSceneByBuildIndex(5);
+
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        if (scene == map1)
+        {
+            highScore = PlayerPrefs.GetInt("HighScore_1", 0);
+        }
+
+        if (scene == map2)
+        {
+            highScore = PlayerPrefs.GetInt("HighScore_2", 0);
+        }
+
+        if (scene == map3)
+        {
+            highScore = PlayerPrefs.GetInt("HighScore_3", 0);
+        }
+
+        if (scene == map4)
+        {
+            highScore = PlayerPrefs.GetInt("HighScore_4", 0);
+        }
+
+
+
 
 #pragma warning disable CS0618 // Type or member is obsolete
         totalNotes = FindObjectsOfType<NoteObject>().Length;
@@ -85,11 +119,11 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if(PauseMenu.isPaused)
+            if (PauseMenu.isPaused)
             {
                 TheMusic.Pause();
             }
-            else if(!PauseMenu.isPaused)
+            else if (!PauseMenu.isPaused)
             {
                 TheMusic.UnPause();
             }
@@ -102,7 +136,7 @@ public class GameManager : MonoBehaviour
             goodHitsText.text = "" + goodHits;
             perfectHitsText.text = "" + perfectHits;
             missedHitsText.text = "" + missedNotes;
-            
+
 
             float totalhits = normalHits + goodHits + perfectHits;
             float percentHit = (totalhits / totalNotes) * 100f;
@@ -129,22 +163,92 @@ public class GameManager : MonoBehaviour
                     }
                 }
             }
-            if(currentScore > highScore)
-            {
-                HighScoreValue = currentScore;
-                HighScoreValueText.text = HighScoreValue.ToString();
-                PlayerPrefs.SetInt("HighScore", currentScore);
-                PlayerPrefs.Save();
-                if(!HighScoreText.activeInHierarchy)
-                {
-                    HighScoreText.SetActive(true);
-                }
 
-            }
-            else if(Input.anyKeyDown)
+            if (scene == map1)
             {
-                PauseMenu.instance.MainMenu();
+                if (currentScore > highScore)
+                {
+                    Debug.Log("NEW HIGH SCORE " + currentScore);
+                    HighScoreValue = currentScore;
+                    HighScoreValueText.text = HighScoreValue.ToString();
+                    PlayerPrefs.SetInt("HighScore_1", currentScore);
+                    PlayerPrefs.Save();
+                    if (!HighScoreText.activeInHierarchy)
+                    {
+                        HighScoreText.SetActive(true);
+                    }
+
+                }
+                else if (Input.anyKeyDown)
+                {
+                    PauseMenu.instance.MainMenu();
+                }
             }
+
+            if (scene == map2)
+            {
+                if (currentScore > highScore)
+                {
+                    Debug.Log("NEW HIGH SCORE " + currentScore);
+                    HighScoreValue = currentScore;
+                    HighScoreValueText.text = HighScoreValue.ToString();
+                    PlayerPrefs.SetInt("HighScore_2", currentScore);
+                    PlayerPrefs.Save();
+                    if (!HighScoreText.activeInHierarchy)
+                    {
+                        HighScoreText.SetActive(true);
+                    }
+
+                }
+                else if (Input.anyKeyDown)
+                {
+                    PauseMenu.instance.MainMenu();
+                }
+            }
+
+            if (scene == map3)
+            {
+                if (currentScore > highScore)
+                {
+                    Debug.Log("NEW HIGH SCORE " + currentScore);
+                    HighScoreValue = currentScore;
+                    HighScoreValueText.text = HighScoreValue.ToString();
+                    PlayerPrefs.SetInt("HighScore_3", currentScore);
+                    PlayerPrefs.Save();
+                    if (!HighScoreText.activeInHierarchy)
+                    {
+                        HighScoreText.SetActive(true);
+                    }
+
+                }
+                else if (Input.anyKeyDown)
+                {
+                    PauseMenu.instance.MainMenu();
+                }
+            }
+
+            if (scene == map4)
+            {
+                if (currentScore > highScore)
+                {
+                    Debug.Log("NEW HIGH SCORE " + currentScore);
+                    HighScoreValue = currentScore;
+                    HighScoreValueText.text = HighScoreValue.ToString();
+                    PlayerPrefs.SetInt("HighScore_4", currentScore);
+                    PlayerPrefs.Save();
+                    if (!HighScoreText.activeInHierarchy)
+                    {
+                        HighScoreText.SetActive(true);
+                    }
+
+                }
+                else if (Input.anyKeyDown)
+                {
+                    PauseMenu.instance.MainMenu();
+                }
+            }
+
+
             RankText.text = rankValue;
 
             finalScoreText.text = currentScore.ToString();
@@ -209,10 +313,10 @@ public class GameManager : MonoBehaviour
     }
     public void Results()
     {
-        if(currentScore > highScore)
+        if (currentScore > highScore)
         {
-        HighScorePanel.SetActive(true);
-        resultsScreen.SetActive(false);
+            HighScorePanel.SetActive(true);
+            resultsScreen.SetActive(false);
         }
         else
         {

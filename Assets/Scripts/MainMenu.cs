@@ -23,6 +23,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
+    public void PlayMap3()
+    {
+        SceneManager.LoadSceneAsync(4);
+    }
+    public void PlayMap4()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
 
     public void BackToMainMenu()
     {

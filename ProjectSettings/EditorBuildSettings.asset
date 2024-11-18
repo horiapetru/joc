@@ -12,11 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MapSelection.unity
     guid: 335f0e3ebb20cc1499d08677b9896e5f
   - enabled: 1
-    path: Assets/Scenes/Map1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/JingleBellsRock.unity
+    guid: 736be562a5fc95f45b926c2556438b2b
   - enabled: 1
-    path: Assets/Scenes/Map2.unity
-    guid: c0c47a15173538f40bdba688128f0036
+    path: Assets/Scenes/Custer.unity
+    guid: 8eab981bc72fd6140bcbe2c4b3d2fc30
+  - enabled: 1
+    path: Assets/Scenes/Trandafir.unity
+    guid: d008ccc4b4d958745a4d52da32562abc
+  - enabled: 1
+    path: Assets/Scenes/iWasMadeForLovingYou.unity
+    guid: ee5aac52bde3425418e686e9408fa1f7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
