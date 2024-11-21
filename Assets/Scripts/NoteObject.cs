@@ -67,6 +67,8 @@ public class NoteObject : MonoBehaviour
 
             GameManager.instance.noteMissed();
             Instantiate(missEffect, missEffect.transform.position, missEffect.transform.rotation);
+            gameObject.SetActive(false);
+            // Destroy(gameObject);
         } 
         
     }

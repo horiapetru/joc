@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
 
     public int scorePerPerfectNote = 200;
 
-    public Text scoreText;
-    public Text MultiplierText;
+    public TMP_Text scoreText;
+    public TMP_Text MultiplierText;
 
     public int currentMultiplier;
     public int multiplierTracker;
