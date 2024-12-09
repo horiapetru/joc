@@ -34,15 +34,15 @@ public TMP_Text map4scoreText;
         map3score = PlayerPrefs.GetInt("HighScore_3",0);
         map4score = PlayerPrefs.GetInt("HighScore_4",0);
 
-        map1username = PlayerPrefs.GetString("HighScoreUsername_1","nume1");
-        map2username = PlayerPrefs.GetString("HighScoreUsername_2","nume2");
-        map3username = PlayerPrefs.GetString("HighScoreUsername_3","nume3");
-        map4username = PlayerPrefs.GetString("HighScoreUsername_4","nume4");
+        map1username = PlayerPrefs.GetString("HighScoreUsername_1","blank");
+        map2username = PlayerPrefs.GetString("HighScoreUsername_2","blank");
+        map3username = PlayerPrefs.GetString("HighScoreUsername_3","blank");
+        map4username = PlayerPrefs.GetString("HighScoreUsername_4","blank");
 
-        map1teamname = PlayerPrefs.GetString("HighScoreTeamname_1","echipa1");
-        map2teamname = PlayerPrefs.GetString("HighScoreTeamname_2","echipa2");
-        map3teamname = PlayerPrefs.GetString("HighScoreTeamname_3","echipa3");
-        map4teamname = PlayerPrefs.GetString("HighScoreTeamname_4","echipa4");
+        map1teamname = PlayerPrefs.GetString("HighScoreTeamname_1","blank");
+        map2teamname = PlayerPrefs.GetString("HighScoreTeamname_2","blank");
+        map3teamname = PlayerPrefs.GetString("HighScoreTeamname_3","blank");
+        map4teamname = PlayerPrefs.GetString("HighScoreTeamname_4","blank");
 
 
         map1scoreText.text = "BEST SCORE: " + map1teamname.ToString() + " - " + map1username.ToString() + " : " + map1score.ToString();

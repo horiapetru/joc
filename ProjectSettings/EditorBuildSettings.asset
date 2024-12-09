@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/JingleBellsRock.unity
     guid: 736be562a5fc95f45b926c2556438b2b
   - enabled: 1
-    path: Assets/Scenes/Custer.unity
+    path: Assets/Scenes/MCR.unity
     guid: 8eab981bc72fd6140bcbe2c4b3d2fc30
   - enabled: 1
     path: Assets/Scenes/Trandafir.unity

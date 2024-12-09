@@ -110,12 +110,10 @@ public class GameManager : MonoBehaviour
 
         if (!startPlaying)
         {
-            if (Input.anyKeyDown)
-            {
+            
                 startPlaying = true;
                 theBS.HasStarted = true;
                 TheMusic.Play();
-            }
         }
         else
         {
